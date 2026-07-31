@@ -14,7 +14,7 @@ st.write("Adjust the chemical properties in the sidebar to see where your custom
 # -------------------------------------------------------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("winequality-red.csv")
+    df = pd.read_csv("PCA.csv")
     X = df.drop('quality', axis=1)
     y = df['quality']
     return df, X, y
